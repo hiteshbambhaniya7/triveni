@@ -411,3 +411,28 @@ nav>a:hover{
         display: block;
     }
 }
+
+/* font */
+#about_us
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#navbar_text
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+#footer
+{
+    font-family: 'Poppins', sans-serif ;
+
+}
+
+#appoinment_title
+{
+    font-family: 'Poppins', sans-serif ;
+    font-weight: 500;
+}

@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="swiper_cards.css">
     <!-- link for css file -->
     <link rel="stylesheet" href="styles.css">
+    <!-- link for fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins&display=swap" rel="stylesheet">
 
 </head>
 
@@ -27,24 +29,24 @@
     <!-- Navbar -->
     <header class="clearfix fixed-top">
         <div class="container">
-                <div class="header-left">
-                    <img src="images/triveni-logo.png" height="40" alt="">
-                </div>
-                <div class="header-right">
-                    <label for="open">
-                        <i class="bi bi-menu-button-wide mr-3"></i>
-                        <!-- <span class="hidden-desktop">
-                        </span> -->
-                    </label>
-                    <input type="checkbox" name="" id="open">
-                    <nav>
-                        <a href="#">Home</a>
-                        <a href="#">Products</a>
-                        <a href="#">Businesses</a>
-                        <a href="#">Contact</a>
-                    </nav>
-                </div>
+            <div class="header-left">
+                <img src="images/triveni-logo.png" height="40" alt="">
             </div>
+            <div class="header-right">
+                <label for="open">
+                    <i class="bi bi-menu-button-wide mr-3"></i>
+                    <!-- <span class="hidden-desktop">
+                        </span> -->
+                </label>
+                <input type="checkbox" name="" id="open">
+                <nav id="navbar_text">
+                    <a href="#">Home</a>
+                    <a href="#our_products">Products</a>
+                    <a href="#">Businesses</a>
+                    <a href="#footer">Contact</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <!-- carousel -->
@@ -79,13 +81,13 @@
     </div>
 
     <!-- About -->
-    <div class="container-fluid p-0">
+    <div id="about_us" class="container-fluid p-0">
         <div class="row">
             <div class="col-lg-5 d-lg-block d-none d-xs-none d-sm-none d-md-none">
-                <img src="images/old.jpg" class="img-fluid mt-3" alt="">
+                <img src="images/old-xsm.jpg" class="img-fluid mt-3" alt="">
             </div>
             <div class="col-md-5 d-md-block d-none d-sm-none d-lg-none">
-                <img src="images/old.jpg" class="img-fluid mt-3" alt="">
+                <img src="images/old-xsm.jpg" class="img-fluid mt-3" alt="">
             </div>
             <div class="col-sm-12 d-sm-block d-none d-xs-none d-md-none d-lg-none">
 
@@ -94,10 +96,17 @@
 
             </div>
             <div class="col-12 col-lg-5 col-md-5 offset-lg-1 offset-md-1 text-center mt-3">
-                <h4 class="mb-3">
+                <h2 class="mt-2">About Us</h2>
+                <h4 class="my-4">
                     Triveni Group, an Iron & Steel Industry enterprise, boasts nearly 70 years of experience as a
                     family-owned business.
                 </h4>
+
+                <div class="col-12">
+                    <img src="images/isi_mark.png" height="50px" class="m-3" alt="">
+                    <img src="images/qms.jpg" height="50px" class="m-3" alt="">
+                    <img src="images/dac.png" height="50px" class="m-3" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -105,9 +114,9 @@
 
     <!-- Our poroducts -->
     <div class="container mt-5 mb-3">
-        <h1 class="text-center fw-bold">
+        <h2 id="our_products" class="text-center fw-bold">
             Our Products
-        </h1>
+        </h2>
         <div class="row g-3 mt-3">
             <div class="col-12 col-md-4 col-lg-4">
                 <div class="card h-100">
@@ -119,7 +128,7 @@
                             material”</p>
                         <br>
                         <br>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
@@ -129,11 +138,12 @@
                         alt="London">
                     <div class="card-body">
                         <h5 class="card-title">Cold Drawn Products – Bright Bars</h5>
-                        <p class="card-text">Bright bars are raw materials that are created from stainless steel alloys
+                        <p class="card-text">Bright bars are raw materials that are created from stainless steel
+                            alloys
                             through a cold drawing technique in a cold reduction mill.
                         </p>
 
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
@@ -143,9 +153,10 @@
                         alt="New York">
                     <div class="card-body">
                         <h5 class="card-title">Crane Rails</h5>
-                        <p class="card-text">Crane Rails are used in making of EOT Cranes, Overhead Cranes, Gantry
+                        <p class="card-text">Crane Rails are used in making of EOT Cranes, Overhead Cranes,
+                            Gantry
                             Cranes & Double Girder Cranes. They are a substitute for “Profile Rails”</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
@@ -153,9 +164,9 @@
     </div>
 
     <!-- sliding cards for testimony -->
-    <h1 class="text text-center fw-bold mt-5">
+    <h2 class="text text-center fw-bold mt-5">
         Meet Our Team
-    </h1>
+    </h2>
     <section class="swiper mySwiper">
 
         <div class="swiper-wrapper">
@@ -168,7 +179,8 @@
                 <div class="card__content">
                     <span class="card__title">Web Designer</span>
                     <span class="card__name">Vanessa Martinez</span>
-                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore
+                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                        veritatis labore
                         provident non tempora odio est sunt, ipsum</p>
                     <button class="card__btn">View More</button>
                 </div>
@@ -182,7 +194,8 @@
                 <div class="card__content">
                     <span class="card__title">Ui Designer</span>
                     <span class="card__name">Sarah Bowen</span>
-                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore
+                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                        veritatis labore
                         provident non tempora odio est sunt, ipsum</p>
                     <button class="card__btn">View More</button>
                 </div>
@@ -196,7 +209,8 @@
                 <div class="card__content">
                     <span class="card__title">Web Developer</span>
                     <span class="card__name">David Murphy</span>
-                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore
+                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                        veritatis labore
                         provident non tempora odio est sunt, ipsum</p>
                     <button class="card__btn">View More</button>
                 </div>
@@ -210,7 +224,8 @@
                 <div class="card__content">
                     <span class="card__title">Mobile Designer</span>
                     <span class="card__name">Kelsey West</span>
-                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore
+                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                        veritatis labore
                         provident non tempora odio est sunt, ipsum</p>
                     <button class="card__btn">View More</button>
                 </div>
@@ -224,7 +239,8 @@
                 <div class="card__content">
                     <span class="card__title">Mobile Designer</span>
                     <span class="card__name">Kelsey West</span>
-                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore
+                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+                        veritatis labore
                         provident non tempora odio est sunt, ipsum</p>
                     <button class="card__btn">View More</button>
                 </div>
@@ -233,9 +249,62 @@
         </div>
     </section>
 
+    <!-- Appoinment section -->
+    <div id="appoinment" class="container mb-4">
+        <h4 id="appoinment_title" class="text-center m-4">Appoinment</h4>
+        <form class="row g-3">
+            <div class="form-floating col-md-6">
+                <input type="text" class="form-control" id="inputFirstname" placeholder="First Name">
+                <label for="inputFirstname" class="form-label">First Name</label>
+            </div>
+            <div class="form-floating col-md-6">
+                <input type="text" class="form-control" id="inputLastname" placeholder="Last Name">
+                <label for="name" class="form-label">Last Name</label>
+            </div>
+            <div class="form-floating col-md-6">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                <label for="inputEmail4" class="form-label">Email</label>
+            </div>
+            <div class="form-floating col-md-6">
+                <input type="text" class="form-control" id="contactNo" placeholder="Contact No.">
+                <label for="contactNo" class="form-label">Contact No.</label>
+            </div>
+            <div class="form-floating col-12">
+                <input type="text" class="form-control" id="discription" placeholder="Write discription">
+                <label for="discription" class="form-label">What you are looking for</label>
+            </div>
+            <div class="form-floating col-md-6">
+                <input type="text" class="form-control" id="inputCity" placeholder="City">
+                <label for="inputCity" class="form-label">City</label>
+            </div>
+            <div class="form-floating col-md-4">
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+                <label for="inputState" class="form-label">State</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="text" class="form-control" id="inputZip" placeholder="Zip">
+                <label for="inputZip" class="form-label">Zip</label>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Submit Details</button>
+            </div>
+        </form>
+    </div>
+
     <!-- Remove the container if you want to extend the Footer to full width. -->
     <!-- Footer -->
-    <div class="container-fluid m-0 p-0">
+    <div id="footer" class="container-fluid m-0 p-0">
         <footer class="text-center text-lg-start text-black" style="background-color: #e0e0e0">
             <!-- Grid container -->
             <div class="container p-4 pb-0">
@@ -247,7 +316,8 @@
                         <div class="col-md-12 col-lg-3 col-xl-3 mx-auto mt-3 mb-3">
                             <img src="images/triveni-logo.png" class="mb-3" height="40px" alt="">
                             <p>
-                                The group specialises in manufacturing of Hot Rolled and Cold Drawn Profile Sections,
+                                The group specialises in manufacturing of Hot Rolled and Cold Drawn Profile
+                                Sections,
                                 Bars, Squares
                                 and Rounds. These profiles include Critical shapes and sections, which adhere to
                                 international
@@ -262,17 +332,20 @@
                         <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 fw-bold">Products</h6>
                             <p>
-                                <a href="" class="text-black text-decoration-none">Hot Rolled Products – Rolling Mill
+                                <a href="" class="text-black text-decoration-none">Hot Rolled Products – Rolling
+                                    Mill
                                     Division</a>
                             </p>
                             <p>
-                                <a href="" class="text-black text-decoration-none">Cold Drawn Products – Bright Bars</a>
+                                <a href="" class="text-black text-decoration-none">Cold Drawn Products – Bright
+                                    Bars</a>
                             </p>
                             <p>
                                 <a href="" class="text-black text-decoration-none">Crane Rails</a>
                             </p>
                             <p>
-                                <a href="" class="text-black text-decoration-none">Precision Machined Components</a>
+                                <a href="" class="text-black text-decoration-none">Precision Machined
+                                    Components</a>
                             </p>
                             <p>
                                 <a href="" class="text-black text-decoration-none">Fabrication Parts</a>
